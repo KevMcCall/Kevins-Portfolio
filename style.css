@@ -1,6 +1,8 @@
 html,body {
-    /* Used To Clip Content*/
-    overflow-x: hidden;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 
@@ -28,20 +30,19 @@ html,body {
     
 }
 
-/*Background Lead Color*/
-.lead {
-    color: red; 
+/* Typewriter Effect */
+    .banner p {
+    color: red;
     font-size: 50px;
     margin: 10px 0 0 10px;
     white-space: nowrap;
+    overflow-wrap: break-word;
     overflow: hidden;
-    width: auto;
+    max-width: 100%;
     display: inline-block;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: typing 4.5s steps(70, end);
+    animation: typing 4s steps(70, end);
+    animation-delay: 1s;
 }
-
 
 /* Blinking Underscore */
 .blinkcursor{
@@ -105,13 +106,10 @@ html,body {
   
 /* styling body */
 .container { 
-    max-width: 1200px; 
+    max-width: 100%; 
     margin: auto; 
 } 
-  
-h1 { 
-    color: green; 
-} 
+
   
 /* paragraph tga decoration */
 p { 
@@ -165,14 +163,47 @@ h2.portfolio {
 
 @keyframes typing {
     from {
-        max-width: 0
+        max-width: 0%;
     }
     to {
-        max-width: 100%
+        max-width: 100%;
     }
 }
 
   
   @keyframes blink{
-    to{opacity: .0;}
+    to {opacity: .0;}
   }
+
+  /* xs < 768 */
+@media screen and (max-width: 360px) {
+    .banner p {
+        font-size: 1.5em;
+    }
+
+    .container h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    
+}
+}
