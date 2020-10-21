@@ -1,7 +1,23 @@
 # Kevin's Portfolio
 
-This is my personal Web Dev Portfolio.
+## [Github Profile](https://github.com/KevMcCall)
 
-## Usage
+## Overview:
 
-Used for school and career purposes.
+ The primary goal of this website is...
+
+## Goal:
+
+ (Text Here)
+
+## Target Audience:
+
+ Employers
+
+
+
+## Technologies Used:
+--------------------
+ HTML               
+ CSS                
+ Bootstrap          
