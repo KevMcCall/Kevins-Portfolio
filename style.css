@@ -16,6 +16,7 @@ html,body {
     border-bottom: solid black 3px;
     margin-bottom: 10px;
     
+    
   }
 
 /*Background H1 Color*/
@@ -23,13 +24,30 @@ html,body {
     margin-top: -250px;
     color: white;
     font-size: 60px;
+    
+    
 }
 
 /*Background Lead Color*/
-.container .lead {
-    color: red;
+.lead {
+    color: red; 
     font-size: 50px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: auto;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 4.5s steps(70, end);
 }
+
+
+/* Blinking Underscore */
+.blinkcursor{
+    animation: blink 1s infinite;
+    color: white;
+  }
 
 /*Link Color*/
 .navbar-custom .navbar-nav .nav-link {
@@ -144,3 +162,17 @@ h2.portfolio {
 .page-footer {
     background-color: #000000;
 }
+
+@keyframes typing {
+    from {
+        max-width: 0
+    }
+    to {
+        max-width: 100%
+    }
+}
+
+  
+  @keyframes blink{
+    to{opacity: .0;}
+  }
