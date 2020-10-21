@@ -187,31 +187,32 @@ h2.portfolio {
 }
 
 /* sm */
-@media screen and (min-width: 1080px) {
-    body {
-        font-size: 1em;
-    }
+@media screen and (min-width: 600px) {
 
     .banner p {
         font-size: 1.0em;
     }
 
     .container h1 {
-        font-size: 2.0;
+        font-size: 1.0em;
     }
 }
 
 /* md */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     body {
         font-size: 1.2em;
     }
 }
 
 /* lg */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
     body {
         font-size: 1.3em;
     
 }
+}
+
+@media screen and (min-width: 1200px) {
+
 }
