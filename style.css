@@ -187,9 +187,17 @@ h2.portfolio {
 }
 
 /* sm */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
     body {
         font-size: 1em;
+    }
+
+    .banner p {
+        font-size: 1.0em;
+    }
+
+    .container h1 {
+        font-size: 2.0;
     }
 }
 
