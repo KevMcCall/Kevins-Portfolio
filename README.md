@@ -17,7 +17,7 @@
 
 
 ## Technologies Used:
---------------------
+
  HTML               
  CSS                
  Bootstrap          
