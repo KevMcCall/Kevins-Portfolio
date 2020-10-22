@@ -51,6 +51,12 @@ html,body {
     color: white;
   }
 
+
+span.navbar-toggler-icon::after {
+    color: white;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
 /*Link Color*/
 .navbar-custom .navbar-nav .nav-link {
     color: #ffffff;    
@@ -81,6 +87,10 @@ html,body {
     
 }
 
+.cardstitle {
+    text-align: center;
+}
+
 /*Angled Background */
 .py-5 {
     clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
@@ -105,14 +115,14 @@ html,body {
     box-sizing: border-box; 
 } 
   
-/* styling body */
+/* Styling Body */
 .container { 
     max-width: 100%; 
     margin: auto; 
 } 
 
   
-/* paragraph tga decoration */
+/* Paragraph Decoration */
 p { 
     display: -webkit-box; 
     -webkit-box-orient: vertical; 
