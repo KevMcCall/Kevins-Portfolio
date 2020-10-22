@@ -40,8 +40,9 @@ html,body {
     overflow: hidden;
     max-width: 100%;
     display: inline-block;
-    animation: typing 4s steps(70, end);
+    animation: typing 7s steps(60, end);
     animation-delay: 1s;
+    animation-duration: 7s;
 }
 
 /* Blinking Underscore */
@@ -161,6 +162,7 @@ h2.portfolio {
     background-color: #000000;
 }
 
+/* Typing Animation */
 @keyframes typing {
     from {
         max-width: 0%;
@@ -170,12 +172,12 @@ h2.portfolio {
     }
 }
 
-  
+/* Blinking Underscore */
   @keyframes blink{
-    to {opacity: .0;}
+    to {opacity: 0;}
   }
 
-  /* xs < 768 */
+  /* Mobile Devices */
 @media screen and (max-width: 360px) {
     .banner p {
         font-size: 1.5em;
@@ -186,8 +188,8 @@ h2.portfolio {
     }
 }
 
-/* sm */
-@media screen and (max-width: 600px) {
+/* iPads, Tablets */ 
+@media screen and (min-width: 768px) {
     .banner p {
         font-size: 1.5em;
     }
@@ -198,14 +200,14 @@ h2.portfolio {
     
 }
 
-/* md */
+/* Small Screens, Laptops */
 @media screen and (min-width: 768px) {
     body {
         
     }
 }
 
-/* lg */
+/* Desktops, Large Screens */
 @media screen and (min-width: 992px) {
     body {
         
@@ -213,6 +215,7 @@ h2.portfolio {
 }
 }
 
+/* Extra large screens, TV */
 @media screen and (min-width: 1200px) {
 
 }
