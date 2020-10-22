@@ -19,7 +19,7 @@
     crossorigin="anonymous"></script>
   <!--Bootstrap CDN End-->
   <link rel="stylesheet" type="text/css" href="style.css">
-  
+
 </head>
 
 
@@ -27,7 +27,7 @@
 
 
   <header>
-    
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
       <div class="container">
@@ -51,9 +51,6 @@
               <a class="nav-link" href="#">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Experience</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
@@ -74,6 +71,7 @@
     </div>
   </header>
 
+
   <!-- Page Content -->
   <main>
     <section class="py-5">
@@ -82,7 +80,7 @@
         <div class="flexbox-item flexprofile">
           <img src="images/ProfilePicture_1.jpg" class="profilepicture" alt="KevinMcCall">
         </div>
-        
+
         <!--About Me-->
         <div class="flexbox-item flextitle">
           <h2>About Me</h2>
@@ -95,48 +93,79 @@
     </section>
 
     <!--Portfolio Cards-->
-    <h2 class="portfolio">Portfolio</h2>
-    <div class="row">
-      <div class="column">
+    <section class="wrapper">
+      <div class="container-fostrap">
         <div class="content">
-          <img src="images/finalproject.png" alt="finalproject" style="width:100%">
-          <br>
-          <br>
-          <h3>Final Project</h3>
-          <p> A landing page for my wife's crochet business.</p>
-          <a href="https://kevmccall.github.io/Final-Project/" class="btn btn-primary">Live Link</a>
-          <a href="https://github.com/KevMcCall/Final-Project" class="btn btn-primary">Github</a>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                  <a class="img-card">
+                    <img src="images/finalproject.png" />
+                  </a>
+                  <div class="card-content">
+                    <h4 class="card-title">
+                      <a>Final Project</a>
+                    </h4>
+                    <p class="">A landing page for my wife's crochet business.</p>
+                  </div>
+                  <div class="card-read-more">
+                    <a href="https://kevmccall.github.io/Final-Project/" class="btn btn-link btn-block">Live View</a>
+                  </div>
+                  <div class="card-read-more">
+                    <a href="https://github.com/KevMcCall/Final-Project" class="btn btn-link btn-block">Github</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                  <a class="img-card">
+                    <img src="images/Recipe.png" />
+                  </a>
+                  <div class="card-content">
+                    <h4 class="card-title">Favorite Recipe</a></h4>
+                    <p class="">Recipe page using HTML, CSS, and Bootstrap Grid System.</p>
+                  </div>
+                  <div class="card-read-more">
+                    <a href="https://kevmccall.github.io/Favorite-Recipe/" class="btn btn-link btn-block">
+                      Live View
+                    </a>
+                  </div>
+                  <div class="card-read-more">
+                    <a href="https://github.com/KevMcCall/Favorite-Recipe.git" class="btn btn-link btn-block">Github</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                  <a class="img-card"><img
+                      src="images/formsandtables.png"/>
+                  </a>
+                  <div class="card-content">
+                    <h4 class="card-title">
+                      <a>Forms & Tables</a>
+                    </h4>
+                    <p class="">A simple form and table using HTML & CSS.</p>
+                  </div>
+                  <div class="card-read-more">
+                    <a href="https://kevmccall.github.io/Forms-And-Tables/"
+                      class="btn btn-link btn-block">Live View</a>
+                  </div>
+                  <div class="card-read-more">
+                    <a href="https://github.com/KevMcCall/Forms-And-Tables.git"
+                      class="btn btn-link btn-block">
+                      Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="column">
-        <div class="content">
-          <img src="images/Cssboxmodel.png" alt="cssboxmodel" style="width:100%">
-          <br>
-          <br>
-          <h3>CSS Box Model</h3>
-
-          <p> A basic page using HTML5, CSS, and Bootstrap.</p>
-          <a href="https://kevmccall.github.io/CSS-Box-Model/" class="btn btn-primary">Live Link</a>
-          <a href="https://github.com/KevMcCall/CSS-Box-Model" class="btn btn-primary">Github</a>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="images/formsandtables.png" alt="tablesandforms" style="width:100%">
-          <br>
-          <br>
-          <h3> Forms & Tables</h3>
-
-          <p> A simple form and table using HTML and CSS</p>
-          <a href="https://kevmccall.github.io/Forms-And-Tables/" class="btn btn-primary">Live Link</a>
-          <a href="https://github.com/KevMcCall/Forms-And-Tables" class="btn btn-primary">Github</a>
-        </div>
-      </div>
-    </div>
-    </div>
+    </section>
   </main>
-  
+
   <!--Footer-->
   <footer class="page-footer blue text-center text-md-left mt-0">
 
