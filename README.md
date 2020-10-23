@@ -3,7 +3,7 @@
 ## [Github Profile](https://github.com/KevMcCall)
 
 ## Overview:
- The goal of this website is to provide a way for those who are interested in my talents to view work I have done and contact me about about any career or business opportunities.
+ The goal of this website is to provide a way for those who are interested in my talents to view work I have done and contact me about any career or business opportunities.
 
 ## Goal:
 
