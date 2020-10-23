@@ -15,7 +15,7 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     border-bottom: solid black 3px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
 /*Background H1 Color*/
@@ -66,14 +66,9 @@ html, body {
     color: #ffffff;
 }
 
-.navbar-custom .nav-item:hover .nav-link {
+#navbarcustom a:hover {
     color: red;
 }
-
-.navbar-dark .navbar-toggler {
-    color: rgba(255,255,255,.5);
-    
-  }
   
   .navbar-dark .navbar-toggler-icon {
     background-image: url("images/menu.svg");
@@ -87,6 +82,15 @@ button.navbar-toggler.collapsed {
     border: none;
 }
 
+
+#navbarcustom.navbar-collapse.collapse.show {
+    background-color: #000000;
+    width: 30%;
+    text-align: center;  
+}
+
+
+
 /*Navbar-Brand Color (Deciding)
 .navbar-custom .navbar-brand {
     color: #ffffff;
@@ -99,20 +103,23 @@ button.navbar-toggler.collapsed {
     height: 175px;
     width: 210px;
     border: solid 3px #ffffff;
+    
 }
 
 .flexprofile {
     margin-top: -20px;
     padding-left: 20px;
+    
 }
+
 
 /*Angled Background/ AboutMe Section */
 
 .py-5 {
     clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
-    background-color: #000000;
-    
+    background-color: #000000;   
 }
+
 
 .flexbox-container {
     display: flex;
@@ -125,6 +132,10 @@ button.navbar-toggler.collapsed {
     padding-top: 20px;
     padding-left: 25px;
     align-self: center;
+}
+
+.flextitle h2 {
+    font-family: 'Staatliches', cursive;
 }
 
 /* Card styling */
@@ -177,7 +188,8 @@ p {
 /* Content Decoration */
 
 .content {
-    background-color: white;
+    background-color: #1ba5b1;
+    background-size: 100% auto;
     padding: 5px;
 }
 
@@ -194,6 +206,7 @@ h2.portfolio {
 }
 
 /* Portfolio Cards */
+
 
 .wrapper {
     display: table;
@@ -214,6 +227,7 @@ h2.portfolio {
 
 .cardstitle {
     text-align: center;
+    font-family: 'Staatliches', cursive;
 }
 
 .card:hover {
