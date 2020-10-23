@@ -32,6 +32,7 @@ html, body {
     color: red;
     font-size: 50px;
     margin: 10px 0 0 10px;
+    padding-left: 15px;
     white-space: nowrap;
     overflow-wrap: break-word;
     overflow: hidden;
@@ -52,11 +53,6 @@ html, body {
     color: white;
 }
 
-span.navbar-toggler-icon::after {
-    color: white;
-    font: normal normal normal 14px/1 FontAwesome;
-}
-
 /*Link Color*/
 
 .navbar-custom .navbar-nav .nav-link {
@@ -65,12 +61,30 @@ span.navbar-toggler-icon::after {
 
 /*Navbar Active & Hover Color*/
 
+
 .navbar-custom .nav-item.active .nav-link {
     color: #ffffff;
 }
 
 .navbar-custom .nav-item:hover .nav-link {
     color: red;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    
+  }
+  
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("images/menu.svg");
+  }
+
+button.navbar-toggler.collapsed {
+      border: none;
+  }
+
+.navbar-toggler {
+    border: none;
 }
 
 /*Navbar-Brand Color (Deciding)
@@ -85,19 +99,19 @@ span.navbar-toggler-icon::after {
     height: 175px;
     width: 210px;
     border: solid 3px #ffffff;
-    margin-top: -35px;
 }
 
-.cardstitle {
-    text-align: center;
+.flexprofile {
+    margin-top: -20px;
+    padding-left: 20px;
 }
 
-/*Angled Background */
+/*Angled Background/ AboutMe Section */
 
 .py-5 {
     clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
     background-color: #000000;
-    border-bottom: solid 3px red;
+    
 }
 
 .flexbox-container {
@@ -108,7 +122,8 @@ span.navbar-toggler-icon::after {
 .flextitle {
     color: #ffffff;
     margin-bottom: 70px;
-    padding-left: 20px;
+    padding-top: 20px;
+    padding-left: 25px;
     align-self: center;
 }
 
@@ -196,6 +211,10 @@ h2.portfolio {
     transition: box-shadow .25s;
 }
 
+.cardstitle {
+    text-align: center;
+}
+
 .card:hover {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -240,8 +259,9 @@ h2.portfolio {
     text-decoration: none !important;
     padding: 10px;
     font-weight: 600;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
+/* Portfolio Cards End */
 
 .rounded-social-buttons {
     text-align: center;
