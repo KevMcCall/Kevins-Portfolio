@@ -190,6 +190,7 @@ h2.portfolio {
 
 .page-footer {
     background-color: #000000;
+    padding-bottom: 100px;
 }
 
 /* Portfolio Cards */
@@ -198,7 +199,7 @@ h2.portfolio {
     display: table;
     height: 100%;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 35px;
 }
 
 .card {
@@ -263,9 +264,12 @@ h2.portfolio {
 }
 /* Portfolio Cards End */
 
+
+/* Footer */
 .rounded-social-buttons {
     text-align: center;
     padding-top: 50px;
+    padding-right: px;
     letter-spacing: 2em;
 }
 
@@ -285,8 +289,7 @@ h2.portfolio {
     line-height: 2em;
     border-radius: 1.6875rem;
     transition: all 0.5s ease;
-    margin-right: 0.25rem;
-    margin-bottom: 0.25rem;
+    
 }
 
 .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
@@ -348,9 +351,212 @@ h2.portfolio {
     color: #000000;
     background: #000000;
     background: #fefefe;
-
-    
+  
 }
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  
+  button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  
+  .background {
+    display: flex;
+    
+  }
+  
+  .contact {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .screen-header-left {
+    margin-right: auto;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .screen-header-button.close {
+    background: #ffffff;
+  }
+  
+  .screen-header-button.maximize {
+    background: #000000;
+  }
+  
+  .screen-header-button.minimize {
+    background: #ff0000
+  }
+
+  .screen-header-left {
+      display: flex;
+  }
+  
+  .screen-header-right {
+    display: flex;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #1e90ff;
+    font-size: 26px;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #ffffff;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #ffffff;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #1e90ff;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: 	#FF0000;
+  }
+  
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
+ /* Footer Ends */  
 
 @media (min-width: 450px) {
     h1.heading {
@@ -399,6 +605,15 @@ h2.portfolio {
     .container h1 {
         font-size: 2.0em;
     }
+
+    .rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.000rem;
+    height: 3.000rem;
+    border: 0.115rem solid transparent;
+}
 }
 
 /* iPads, Tablets */
