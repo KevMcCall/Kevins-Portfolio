@@ -1,7 +1,7 @@
 html, body {
     width: 100%;
     margin: 0px;
-    padding: 0px;
+    padding: auto;
     overflow-x: hidden;
 }
 
@@ -190,7 +190,7 @@ h2.portfolio {
 
 .page-footer {
     background-color: #000000;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 /* Portfolio Cards */
@@ -547,15 +547,7 @@ h2.portfolio {
     }
   }
   
-  @media screen and (max-width: 600px) {
-    .screen-body {
-      padding: 40px;
-    }
   
-    .screen-body-item {
-      padding: 0;
-    }
-  }
  /* Footer Ends */  
 
 @media (min-width: 450px) {
@@ -629,7 +621,7 @@ h2.portfolio {
 
 /* Small Screens, Laptops */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 770px) {
     .banner p {
         font-size: 3.0em;
     }
