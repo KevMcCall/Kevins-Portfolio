@@ -40,6 +40,9 @@ html, body {
     animation: typing 7s steps(60, end);
     animation-delay: 1s;
     animation-duration: 7s;
+    -webkit-animation: typing 7s steps(60, end) ;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 7s;
 }
 
 /* Blinking Underscore */
@@ -94,6 +97,7 @@ span.navbar-toggler-icon::after {
 .py-5 {
     clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
     background-color: #000000;
+    border-bottom: solid 3px red;
 }
 
 .flexbox-container {
